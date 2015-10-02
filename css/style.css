@@ -48,6 +48,12 @@ input, select {
   vertical-align: middle; }
 
 /* END RESET CSS */
+nav ul li a, .new span.overlay, #player_nav li a, #listing li a {
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in; }
+
 body, select, input, textarea {
   color: #4E4F48; }
 
@@ -113,9 +119,6 @@ header {
     height: 16px;
     width: 150px;
     border: 2px solid #4E4F48;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
-    -o-border-radius: 7px;
     border-radius: 7px;
     behavior: url(PIE.htc); }
   header input[type="text"] {
@@ -170,15 +173,8 @@ nav {
     margin-right: 5px;
     text-align: center;
     color: white;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
-    -o-border-radius: 7px;
     border-radius: 7px;
-    behavior: url(PIE.htc);
-    -moz-transition: background-color .3s ease-in;
-    -webkit-transition: background-color .3s ease-in;
-    -o-transition: background-color .3s ease-in;
-    transition: background-color .3s ease-in; }
+    behavior: url(PIE.htc); }
   nav ul li a:hover {
     background-color: #C2CF52; }
   nav ul.account {
@@ -217,11 +213,7 @@ nav ul li, footer ul li {
     z-index: 100;
     font-weight: bold;
     padding: 10px;
-    color: white;
-    -moz-transition: all .3s ease-in;
-    -webkit-transition: all .3s ease-in;
-    -o-transition: all .3s ease-in;
-    transition: all .3s ease-in; }
+    color: white; }
   .new a:hover span.overlay {
     opacity: 1;
     bottom: 0; }
@@ -284,9 +276,6 @@ img {
   z-index: 200;
   padding: 10px 0px 10px 10px;
   line-height: 50px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -o-border-radius: 10px;
   border-radius: 10px;
   behavior: url(PIE.htc); }
   #type li {
@@ -331,15 +320,8 @@ img {
       border-bottom: none;
       color: white;
       margin-right: 1px;
-      -moz-border-radius: 15px 15px 0 0;
-      -webkit-border-radius: 15px 15px 0 0;
-      -o-border-radius: 15px 15px 0 0;
       border-radius: 15px 15px 0 0;
-      behavior: url(PIE.htc);
-      -moz-transition: all .3s ease-in;
-      -webkit-transition: all .3s ease-in;
-      -o-transition: all .3s ease-in;
-      transition: all .3s ease-in; }
+      behaviour: url(PIE.htc); }
     #player_nav li a:hover {
       background-color: #C2CF52;
       border: 5px solid #C2CF52;
@@ -451,9 +433,6 @@ p.reviewer {
   background-color: #4E4F48;
   color: white;
   float: right;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -o-border-radius: 15px;
   border-radius: 15px;
   behavior: url(PIE.htc); }
   #sidebar img {
@@ -464,34 +443,24 @@ p.reviewer {
 
 #listing ul {
   line-height: 50px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -o-border-radius: 10px;
   border-radius: 10px;
   behavior: url(PIE.htc); }
 #listing img {
   padding-right: 8px; }
 #listing li {
   list-style: none; }
-#listing li a {
-  width: 200px;
-  margin: 10px;
-  display: block;
-  float: left;
-  line-height: 50px;
-  color: #4E4F48;
-  font-size: 1.3em;
-  margin-left: 1em;
-  -moz-transition: all .3s ease-in;
-  -webkit-transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
-  transition: all .3s ease-in; }
-#listing li a:hover {
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-  behavior: url(PIE.htc);
-  background-color: #C2CF52; }
+  #listing li a {
+    width: 200px;
+    margin: 10px;
+    display: block;
+    float: left;
+    line-height: 50px;
+    color: #4E4F48;
+    font-size: 1.3em;
+    margin-left: 1em; }
+  #listing li a:hover {
+    border-radius: 8px;
+    behavior: url(PIE.htc);
+    background-color: #C2CF52; }
 
 /*# sourceMappingURL=style.css.map */
