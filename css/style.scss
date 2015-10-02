@@ -142,24 +142,21 @@ header {
           font-size: .9em;
           color: $base;
           padding-top: 0px;
-        }
-        a:hover { text-decoration: underline; }
-        a[href^="cart"] {
+          &:hover { text-decoration: underline; }
+          &[href^="cart"] {
           position: absolute;
           right: -100px;
           top: 0;
           height: 50px;
           width: 86px;
-          margin-top: 18px;
+          line-height: 30px;
         }
         
-        a[href^="cart"] img{
-          margin: -48px 25px 0 0;
+        &[href^="cart"] img{
+            margin-right: 8px;
         }
-        
-    }
-    
-      
+      }      
+    }      
 }
 
 
@@ -192,12 +189,12 @@ nav {
       color: white;
       @include rounded;
      @extend %transition;
+         &:hover {
+             background-color: $accent;
+         }
     }
     
-    ul li a:hover {
-  background-color: $accent;
-    }
-
+   
     ul.account {
   float: none;
   margin-top: 0;
@@ -361,21 +358,21 @@ img { float: left; }
       margin-right: 1px;
      @include tabs(15px);
      @extend %transition;
+         
+        &:hover {
+          background-color: $accent;
+          border: 5px solid $accent;
+          border-bottom: none;
         }
-     a:hover {
-      background-color: $accent;
-      border: 5px solid $accent;
-      border-bottom: none;
-    }
-     a.active {
-      background: #ffffff url(../images/player.png) no-repeat;
-      color: $base;
-      height: 43px;
-      border: 5px solid $base;
-      border-bottom: none;
-      cursor: default;
+         &.active {
+          background: #ffffff url(../images/player.png) no-repeat;
+          color: $base;
+          height: 43px;
+          border: 5px solid $base;
+          border-bottom: none;
+          cursor: default;
+         }
      }
-   
    }
    
    

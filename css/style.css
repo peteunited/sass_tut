@@ -140,17 +140,17 @@ header {
       font-size: .9em;
       color: #4E4F48;
       padding-top: 0px; }
-    header .account a:hover {
-      text-decoration: underline; }
-    header .account a[href^="cart"] {
-      position: absolute;
-      right: -100px;
-      top: 0;
-      height: 50px;
-      width: 86px;
-      margin-top: 18px; }
-    header .account a[href^="cart"] img {
-      margin: -48px 25px 0 0; }
+      header .account a:hover {
+        text-decoration: underline; }
+      header .account a[href^="cart"] {
+        position: absolute;
+        right: -100px;
+        top: 0;
+        height: 50px;
+        width: 86px;
+        line-height: 30px; }
+      header .account a[href^="cart"] img {
+        margin-right: 8px; }
 
 .branding #logo {
   display: block;
@@ -175,8 +175,8 @@ nav {
     color: white;
     border-radius: 7px;
     behavior: url(PIE.htc); }
-  nav ul li a:hover {
-    background-color: #C2CF52; }
+    nav ul li a:hover {
+      background-color: #C2CF52; }
   nav ul.account {
     float: none;
     margin-top: 0;
@@ -322,17 +322,17 @@ img {
       margin-right: 1px;
       border-radius: 15px 15px 0 0;
       behaviour: url(PIE.htc); }
-    #player_nav li a:hover {
-      background-color: #C2CF52;
-      border: 5px solid #C2CF52;
-      border-bottom: none; }
-    #player_nav li a.active {
-      background: #ffffff url(../images/player.png) no-repeat;
-      color: #4E4F48;
-      height: 43px;
-      border: 5px solid #4E4F48;
-      border-bottom: none;
-      cursor: default; }
+      #player_nav li a:hover {
+        background-color: #C2CF52;
+        border: 5px solid #C2CF52;
+        border-bottom: none; }
+      #player_nav li a.active {
+        background: #ffffff url(../images/player.png) no-repeat;
+        color: #4E4F48;
+        height: 43px;
+        border: 5px solid #4E4F48;
+        border-bottom: none;
+        cursor: default; }
   #player_nav li.detail a {
     background-position: 0 -43px; }
   #player_nav li.video a {
